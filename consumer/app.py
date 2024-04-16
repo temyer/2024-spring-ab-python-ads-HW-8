@@ -55,6 +55,7 @@ def callback(ch, method, properties, body):
 
 
 def start_consumer():
+    print("starting consumer...")
     config = get_config()
 
     credentials = pika.PlainCredentials(config.RABBIT_USER, config.RABBIT_PWD)
@@ -73,5 +74,4 @@ def start_consumer():
 
 
 if __name__ == "__main__":
-    print("starting consumer...")
     start_consumer()

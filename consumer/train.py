@@ -7,7 +7,7 @@ from catboost import CatBoostClassifier
 from sklift.models import SoloModel, TwoModels
 
 
-Model = tp.Literal["solo"] | tp.Literal["two"]
+Model = tp.Literal["solo-model"] | tp.Literal["two-model"]
 
 
 def get_data(train_size: float):
